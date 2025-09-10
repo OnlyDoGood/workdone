@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WORK-IT-OUT</title>
+    <link rel="shortcut icon" href="/assets/logo-transparent-png.png" type="image/x-icon" >    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rock+Salt&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+
+
+
+        <ul class="side-bar ">
+            <li class="menu-icon">
+                <!-- Set an initial state for the icon with a data attribute -->
+                <ion-icon onclick="showSidebar()" name="close-outline" id="menuIcon" data-icon="menu-outline"></ion-icon>
+            </li>
+            <li><a  href="index.html">Home</a></li>
+            <li><a  href="/schedule.html">Schedule</a></li>
+            <li><a href="/passes.html">Passes</a></li>
+            <li><a href="massage.html">Massage</a></li>
+            <li><a href="team.html">The Team</a></li>
+            <li><a href="ourspace.html"> Our Space</a></li>
+            <li><a id="active" href="/contacts.html"> Contact</a></li>
+
+        </ul>
+        <ul>
+             <li>
+          <a class="logo" href="index.html"
+            ><img src="/assets/logo-transparent-png.png" alt=""></a>
+        </li>
+            <li class="hideOnMobile"><a  href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a  href="/schedule.html">Schedule</a></li>
+            <li><a class="hideOnMobile" href="/passes.html" >Passes</a></li>
+            <li class="hideOnMobile"><a href="massage.html">Massage</a></li>
+            <li class="hideOnMobile"><a href="team.html">The Team</a></li>
+            <li class="hideOnMobile"><a href="ourspace.html"> Our Space</a></li>
+            <li class="hideOnMobile"><a id="active" href="/contacts.html"> Contact</a></li>
+            <li class="menu-icon">
+                <!-- Set an initial state for the icon with a data attribute -->
+                <ion-icon onclick="showSidebar()" name="menu-outline" id="menuIcon" data-icon="menu-outline"></ion-icon>
+            </li>
+        </ul>
+
+
+
+    </nav> 
+    <div class="hero-contact">
+        <h2 class="classes"> Contact Us </h2>
+        <p>We’re proud to be a part of the Canandaigua community, and hope you’ll join us on your health and wellness journey! <br>
+You can find us on South Main Street – Look for Building 523!</p>
+</p>
+  <div class="contact-info">
+        <div class="contact-item">
+            <ion-icon name="location"></ion-icon>
+            <h3>Address</h3>
+            <p>523 South Main Street, Canandaigua, NY 14424</p>
+        </div>
+        <div class="contact-item">
+            <ion-icon name="call"></ion-icon>
+            <h3>Phone</h3>
+            <p>(585) 394-0000</p>
+        </div>
+        <div class="contact-item">
+            <ion-icon name="mail-outline"></ion-icon>
+            <h3>Email</h3>
+            <p>
+                <a href="mailto:"> desmondOdogwu306@gmail.com</a>
+
+                </p>
+        </div>
+</div>
+
+    </div>
+    <div class="contact-form" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <img src="assets/man-9163758_1280.jpg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" alt="">
+        <form action="" method="post">
+            <h2>Send us a message</h2>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+  
+    <footer data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#"><ion-icon name="location"></ion-icon></a>
+                <a href="#"><ion-icon name="call"></ion-icon></a>
+                <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            </div>
+            <h3>Stay Fit. Stay Healthy. Stay Happy.</h3>
+            <p>© 2025 Work-it-out Fittness & Wellness | All Rights Reserved
+Website by Odg Odoogwu Desmond</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+    </script>
+    <script src="script.js"></script>
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

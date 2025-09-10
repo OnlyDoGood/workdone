@@ -1,0 +1,196 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>WORK-IT-OUT</title>
+    <link rel="shortcut icon" href="/assets/logo-transparent-png.png" type="image/x-icon">    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+      <ul class="side-bar">
+        <li class="menu-icon">
+          <!-- Set an initial state for the icon with a data attribute -->
+          <ion-icon
+            onclick="showSidebar()"
+            name="close-outline"
+            id="menuIcon"
+            data-icon="menu-outline"
+          ></ion-icon>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="/schedule.html">Schedule</a></li>
+        <li><a href="/passes.html">Passes</a></li>
+        <li><a id="active" href="massage.html">Massage</a></li>
+        <li><a href="team.html">The Team</a></li>
+        <li><a href="ourspace.html"> Our Space</a></li>
+        <li><a href="/contacts.html"> Contact</a></li>
+      </ul>
+      <ul>
+         <li>
+          <a class="logo" href="index.html"
+            ><img src="/assets/logo-transparent-png.png" alt=""></a>
+        </li>
+        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="/schedule.html">Schedule</a></li>
+        <li><a class="hideOnMobile" href="/passes.html">Passes</a></li>
+        <li class="hideOnMobile">
+          <a id="active" href="massage.html">Massage</a>
+        </li>
+        <li class="hideOnMobile"><a href="team.html">The Team</a></li>
+        <li class="hideOnMobile"><a href="ourspace.html"> Our Space</a></li>
+        <li class="hideOnMobile"><a href="/contacts.html"> Contact</a></li>
+        <li class="menu-icon">
+          <!-- Set an initial state for the icon with a data attribute -->
+          <ion-icon
+            onclick="showSidebar()"
+            name="menu-outline"
+            id="menuIcon"
+            data-icon="menu-outline"
+          ></ion-icon>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="hero-passes">
+      <h2 class="classes">Massage Therapy</h2>
+      <p class="Therapy"  data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+        You’ll be in good hands with our experienced and licensed massage
+        therapists, who hold degrees in integrated health care and therapeutic
+        massage. Our cozy, private treatment room with a fireplace and dim
+        lighting is perfect for your session. We offer Swedish and deep tissue
+        massage options tailored specifically to your needs. Both massage
+        modalities flush out toxins and increase your body’s own ability to
+        heal.
+        <span
+          >You may purchase any of our massage of ferings online below, but all
+          appointments need to be scheduled in advance.
+          <a href="#">Stop in or call 585-697-4871.</a>
+        </span>
+      </p>
+      <div class="massage-item">
+        <div class="col-1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <div class="massage-info">
+            <h2>Back Pain Rescue</h2>
+            <p>
+              A 30-minute massage on the back, neck and shoulders followed by 20
+              minutes of reflexology (and stretching if necessary) for a total
+              of 50 minutes.
+            </p>
+          </div>
+          <div class="sell">
+            <button><small>50 mintues: $50</small> Buy Now</button>
+          </div>
+        </div>
+        <div class="col-1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <div class="massage-info">
+            <h2>Be Stretched</h2>
+            <p>
+              Our new assisted stretching service helps you take stretching to
+              the next level and really benefit! This hands-on approach, along
+              with relaxation techniques, helps you increase mobility in your
+              muscles and joints. You’ll also feel the tension you currently
+              have unwind and fade away. Stretching benefits include reduced
+              tension, improved posture, increased range of motion, reduced back
+              pain and fewer headaches. This service provide so much relief,
+              it’s a must try! Add this 30 minute service to a massage
+              appointment too!
+            </p>
+          </div>
+          <div class="sell">
+            <button><small>30 mintues: $25</small> Buy Now</button>
+          </div>
+        </div>
+        <div class="col-1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <div class="massage-info">
+            <h2>Deep Tissue Massage</h2>
+            <p>
+              A firmer pressure during deep tissue massage relieves chronic
+              muscle tension, and reduces soreness and spasms. Deep tissue
+              massage increases blood flow, which aids your body’s own healing
+              abilities. This modality is particularly beneficial to runners and
+              athletes, and is often prescribed by doctors or chiropractors to
+              relieve migraines and tension headaches.
+            </p>
+          </div>
+          <div class="sell">
+            <button><small>30 mintues: $47 <br>1 Hour : $85</small> Buy Now</button>
+          </div>
+        </div>
+        <div class="col-1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <div class="massage-info">
+            <h2>SPA Package</h2>
+            <p>
+              Spa packages include your choice of a 60 or 30 minute massage, a
+              hand paraffin dip, and a foot soak and scrub, including foot
+              massage. It's the ultimate treatment to feel relaxed and
+              refreshed.
+            </p>
+          </div>
+          <div class="sell">
+            <button><small>30 mintues: $47 <br>1 Hour : $85</small> Buy Now</button>
+          </div>
+        </div>
+        <div class="col-1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <div class="massage-info">
+            <h2>Swedish Massage</h2>
+            <p>
+              Using light pressure techniques, Swedish massage (also called
+              classic massage) is perfect for relaxation and comfort, reducing
+              stress, improving circulation and gently easing mild muscle
+              soreness.
+            </p>
+          </div>
+          <div class="sell">
+            <button>
+              <small
+                >30 mintues: $37 <br />
+                1 Hour : $75</small
+              >
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="social-icons">
+          <a href="#"><ion-icon name="location"></ion-icon></a>
+          <a href="#"><ion-icon name="call"></ion-icon></a>
+          <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+        <h3>Stay Fit. Stay Healthy. Stay Happy.</h3>
+        <p>
+          © 2025 Work-it-out Fittness & Wellness | All Rights Reserved Website
+          by Odg Odoogwu Desmond
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

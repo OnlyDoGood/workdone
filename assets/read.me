@@ -1,0 +1,73 @@
+/* Initially hide the modal */
+.showUp {
+  display: none;
+  /* Other styling for your modal and backdrop... */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
+  
+  /* Make sure the modal content is centered */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add a new class to show the modal */
+.showUp.visible {
+  display: flex;
+}
+\\
+document.addEventListener('DOMContentLoaded', () => {
+  // 1. Select the modal and its elements
+  const showUpModal = document.getElementById('showUp');
+  const modalImage = document.getElementById('modal-image');
+  const closeButton = document.getElementById('close');
+
+  // 2. Select all images that should open the modal
+  // Assuming your gallery images have a class like "gallery-image"
+  const galleryImages = document.querySelectorAll('.gallery-image');
+
+  // 3. Create functions to handle opening and closing the modal
+  function openModal(imageSrc) {
+    showUpModal.classList.add('visible'); // Add a class to make it visible
+    modalImage.src = imageSrc; // Set the image source
+  }
+
+  function closeModal() {
+    showUpModal.classList.remove('visible'); // Remove the class to hide it
+  }
+
+  // 4. Attach event listeners
+  
+  // Listen for clicks on the gallery images
+  galleryImages.forEach(image => {
+    image.addEventListener('click', () => {
+      openModal(image.src); // Get the src of the clicked image and open the modal
+    });
+  });
+
+  // Listen for clicks on the close button
+  closeButton.addEventListener('click', closeModal);
+
+  // Listen for clicks outside the modal
+  showUpModal.addEventListener('click', (event) => {
+    // If the click happened on the modal container itself (not the image), close it
+    if (event.target === showUpModal) {
+      closeModal();
+    }
+  });
+
+  // Listen for the "Escape" key to close the modal
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && showUpModal.classList.contains('visible')) {
+      closeModal();
+    }
+  });
+});
+\\
+

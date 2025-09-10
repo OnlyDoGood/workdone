@@ -1,0 +1,246 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WORK-IT-OUT</title>
+    <link rel="shortcut icon" href="/assets/logo-transparent-png.png" type="image/x-icon">    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rock+Salt&display=swap" rel="stylesheet">
+</head>
+<body>
+       <nav data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+
+
+
+        <ul class="side-bar ">
+            <li class="menu-icon">
+                <!-- Set an initial state for the icon with a data attribute -->
+                <ion-icon onclick="showSidebar()" name="close-outline" id="menuIcon" data-icon="menu-outline"></ion-icon>
+            </li>
+            <li><a  href="index.html">Home</a></li>
+            <li><a id="active" href="/schedule.html">Schedule</a></li>
+            <li><a href="/passes.html">Passes</a></li>
+            <li><a href="massage.html">Massage</a></li>
+            <li><a href="team.html">The Team</a></li>
+            <li><a href="ourspace.html"> Our Space</a></li>
+            <li><a href="/contacts.html"> Contact</a></li>
+
+        </ul>
+        <ul>
+            <li>
+          <a class="logo" href="index.html"
+            ><img src="/assets/logo-transparent-png.png" alt=""></a>
+        </li>
+            <li class="hideOnMobile"><a  href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a id="active" href="/schedule.html">Schedule</a></li>
+            <li class="hideOnMobile"><a href="/passes.html">Passes</a></li>
+            <li class="hideOnMobile"><a href="massage.html">Massage</a></li>
+            <li class="hideOnMobile"><a href="team.html">The Team</a></li>
+            <li class="hideOnMobile"><a href="ourspace.html"> Our Space</a></li>
+            <li class="hideOnMobile"><a href="/contacts.html"> Contact</a></li>
+            <li class="menu-icon">
+                <!-- Set an initial state for the icon with a data attribute -->
+                <ion-icon onclick="showSidebar()" name="menu-outline" id="menuIcon" data-icon="menu-outline"></ion-icon>
+            </li>
+        </ul>
+
+
+
+    </nav> 
+    <!-- <div class="hero">
+        <div class="hero-schedule">
+            <h1>Schedule</h1>
+            <p>We offer a variety of classes to meet your fitness needs. Whether you're looking for high-intensity workouts or low-impact exercises, we have something for everyone. Check out our weekly schedule below and find the perfect class for you!</p>
+        </div> -->
+    <div class="hero-schedule-schedule">
+        <h2 class="classes"> OUR CLASSES <button class="c-btn"><a href="passes.html" style="color: #fff;">Get Class Passes</a></button></h2>
+        <p>In addition to the set schedule below, we offer changing classes each week, including classes on Sunday. <a href="#">Please check our Facebook page regularly for the most up-to-date schedule!</a></p>
+        <ul class="hours"><b>Open Gym Hours in The Grit Room :</b>
+            <li>Monday to Friday: 6:00am - 9:00pm</li>
+            <li>Saturday: 8:00am - 6:00pm</li>
+            <li>Sunday: 8:00am - 4:00pm</li>
+            <br>
+            <li>Interested in personal training? Stop in or call to learn more and schedule your sessions: (585) 697-4871.</li> 
+        </ul>
+
+</p>
+    </div>
+    <div class="classes-plans"  data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+                        <h2 class="class"  data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200"> weekly schedule & trainer</h2>
+
+<table id="table"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+    <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+    </tr>
+    <tr>
+        <td>6:00am - 7:00am</td>
+        <td>Yoga with Sarah</td>
+        <td>HIIT with Mike</td>
+        <td>Spin with Anna</td>
+        <td>Strength Training with John</td>
+        <td>Pilates with Emily</td>
+        <td>Zumba with Lisa</td>
+    </tr>
+    <tr>
+        <td>7:30am - 8:30am</td>
+        <td>Cardio Kickboxing with Tom</td>
+        <td>Bootcamp with Rachel</td>
+        <td>CrossFit with Dave</td>
+        <td>Barre with Sophie</td>
+        <td>Functional Fitness with Chris</td>
+        <td>Body Pump with Kelly</td>
+    </tr>
+    <tr>
+        <td>9:00am - 10:00am</td>
+        <td>Pilates with Emily</td>
+        <td>Yoga with Sarah</td>
+        <td>HIIT with Mike</td>
+        <td>Spin with Anna</td>
+        <td>Strength Training with John</td>
+        <td>Zumba with Lisa</td>
+    </tr>
+    <tr>
+        <td>10:30am - 11:30am</td>
+        <td>Strength Training with John</td>
+        <td>Pilates with Emily</td>
+        <td>Cardio Kickboxing with Tom</td>
+        <td>Bootcamp with Rachel</td>
+        <td>CrossFit with Dave</td>
+        <td>Body Pump with Kelly</td>
+    </tr>
+    <tr>
+        <td>12:00pm - 1:00pm</td>
+        <td>Spin with Anna</td>
+        <td>Strength Training with John</td>
+        <td>Pilates with Emily</td>
+        <td>Yoga with Sarah</td>
+        <td>HIIT with Mike</td>
+        <td>Zumba with Lisa</td>
+    </tr>
+    <tr>
+        <td>5:30pm - 6:30pm</td>
+        <td>Bootcamp with Rachel</td>
+        <td>CrossFit with Dave</td>
+        <td>Barre with Sophie</td>
+        <td>Functional Fitness with Chris</td>
+        <td>Body Pump with Kelly</td>
+        <td>Cardio Kickboxing with Tom</td>
+    </tr>
+    <tr>
+        <td>7:00pm - 8:00pm</td>
+        <td>Yoga with Sarah</td>
+        <td>HIIT with Mike</td>
+        <td>Spin with Anna</td>
+        <td>Strength Training with John</td>
+        <td>Pilates with Emily</td>
+        <td>Zumba with Lisa</td>
+    </tr>
+
+</table>
+
+    </div>
+    <div class="classes-descriptions"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <h2 class="class"> Class Descriptions</h2>
+        <div class="description">
+                <h2  class="classes-description" data-target="faq1">800 REPs <small>50 mins  <ion-icon name="caret-down-outline"></ion-icon></small></h2>
+            <p id="faq1" >Created by Melissa Buchanan this class is an original. 
+                Combining strength and cardio moves into 4 blocks where the number of repetitions increases with each block. By the end of the workout, the total number of reps equals, you guessed it - 800.
+                 This class will not only give you a great workout, but you WILL feel so accomplished and successful. Shoes required, all other equipment provided.</p>
+
+    </div>
+        <div class="description"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <h2 class="classes-description" data-target="faq2">Arms & Abs <small>45 mins  <ion-icon name="caret-down-outline"></ion-icon></small> </h2>
+            <p id="faq2" >Tuesdays just got better with a fun 45 minute low impact arm and ab class. We will use light weight dumbbells for upper body followed by core on the floor. (Weights and mats are provided.) A great workout for all fitness levels. Join us!</p>
+
+    </div>
+        <div class="description"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <h2 class="classes-description" data-target="faq3">BARRE <small>50 mins  <ion-icon name="caret-down-outline"></ion-icon></small></h2>
+            <p id="faq3" >Barre utilizes ballet principals to create a unique fitness experience. In just a few simple moves, your muscles will be shaking. This class always incorporates both upper and lower body exercises, all low impact and effective! Modifications are available to suit the needs of any fitness level.</p>
+
+    </div>
+        <div class="description"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <h2 class="classes-description" data-target="faq4">BOOTCAMP <small>50 min  <ion-icon name="caret-down-outline"></ion-icon></small></h2>
+            <p id="faq4" >Usually done with stations around the room, this is a higher intensity and higher impact class. We focus on strength, team work and empowerment. You will usually finish with a WOD (workout of the day) and get your name on our white board for the month. This class leaves you with a great feeling of accomplishment (and sweat). 😉</p>
+    </div>
+        <div class="description"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <h2 class="classes-description"  data-target="faq5">FIT KIDS<small>45 min  <ion-icon name="caret-down-outline"></ion-icon></small></h2>
+            <p id="faq5">Fit Kids is a fun, 45-minute class where kids rotate through four stations around the room: Agility, balance, upper body and Lower body. If there is time, we finish with a game at the end. They will have fun, be challenged and work on actual skills. $5 a child. For ages 5 to 13.</p>
+
+    </div>
+        <div class="description"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <h2 class="classes-description" data-target="faq6">PILATES <small>30 min  <ion-icon name="caret-down-outline"></ion-icon></small></h2>
+            <p id="faq6">This is a mat class that focuses on strengthening the core through slow controlled movements and breathing. You may not break a sweat, but you will be pleasantly surprised at how effective this workout is. No shoes needed, mats provided. Currently 30 minutes in length and available in person or on zoom. $5 a class.</p>
+
+    </div>
+        <div class="description"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <h2 class="classes-description" data-target="faq7">PILATES  fusion<small>50 min  <ion-icon name="caret-down-outline"></ion-icon></small></h2>
+            <p id="faq7">🌀Pilates fusion is an upbeat 50 minute low impact mat class. Inspired by PiYo, Barre, and Piloxing Melissa has designed a class to blend them all for a great total body low impact workout.🌀(Perfect for any fitness level. You will be barefoot on a mat and using light weights).</p>
+
+    </div>
+        <div class="description"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <h2 class="classes-description" data-target="faq8">pound <small>50 min  <ion-icon name="caret-down-outline"></ion-icon></small></h2>
+            <p id="faq8">It's the world’s first cardio jam session inspired by playing the drums. The music is loud, the energy is high and the work out is intense. Rip Stix and mats are provided. Shoes are optional. Ages 14 and up. All fitness levels welcome. Class limit of 30.</p>
+
+    </div>
+        <div class="description"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <h2 class="classes-description" data-target="faq9">power flow <small>50 min  <ion-icon name="caret-down-outline"></ion-icon></small></h2>
+            <p id="faq9">Power Flow takes yoga-inspired movements and combines them with weights and resistance bands to create an amazing, low-impact strength training workout for all levels and abilities. We use the rhythm, speed and phrasing of fun music to keep class participants on the same pace, and to create an inspiring and energetic experience for our students.</p>
+
+    </div>
+        <div class="description"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <h2 class="classes-description" data-target="faq10">sunrise strenght<small>50 min  <ion-icon name="caret-down-outline"></ion-icon></small></h2>
+            <p id="faq10">Sunrise strength is our morning workout class. We warm up, we do cardio and then we hit strength with dumbbells. Abs are usually our big finish. So in other words, nothing is left out here. Feel free to join this fun, happy group and start your day off right. Let’s go early birds!</p>
+
+    </div>
+        <div class="description"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <h2 class="classes-description" data-target="faq11">the grit room open gym <small>45 min  <ion-icon name="caret-down-outline"></ion-icon></small></h2>
+            <p  id="faq11">The Grit Room is a gym where you can get your hardcore workout on! There are no machines -- you are the machine. Ball  slam, battle rope, punching bag and box jump your way to a  stronger you. The Grit Room is just how it sounds: A gritty place  for you to get fit and SWEAT. Each week we write out a plan you can follow for tackling each station OR you can make up your own. Once you have been through our orientation, you’re good to go!  You can come use the grit room at your convenience. Open Monday through Friday 5:30am to 7pm and Saturdays 8am to 3pm.</p>
+
+    </div>
+        <div class="description"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <h2 class="classes-description" data-target="faq12">total body circuit <small>45 min  <ion-icon name="caret-down-outline"></ion-icon></small></h2>
+            <p id="faq12">This 45 minute class is a full body workout addressing all major muscle groups plus some cardio. It will be run on a timed circuit where you will move from station to station or we do it together! All fitness levels welcome from beginners to advanced. This class is a perfect mix of cardio and strength to increase metabolism and torch calories!</p>
+
+    </div>
+        <div class="description"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <h2 class="classes-description" data-target="faq13">wide Ride<small>45 min <ion-icon name="caret-down-outline"></ion-icon></small></h2>
+            <p id="faq13">Throw away any negative ideas you've had about spin class. Wild Ride will get you pumped and keep you engaged all the way though this 45 minute cardio burn. This class is loosely choreographed and very much driven by the beat of the music. The music is LOUD and motivating! We will travel through sprints, hills, intervals and jumps, and incorporate upper body and core moves. Wild Ride will leave you feeling accomplished, sweaty and motivated! This class has limited availability, please contact us in advance to reserve a bike. All fitness levels welcome!</p>
+
+    </div>
+</div>
+    <div class="class-btn"  data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+        <button><a href="passes.html">Buy Class Passes</a></button>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#"><ion-icon name="location"></ion-icon></a>
+                <a href="#"><ion-icon name="call"></ion-icon></a>
+                <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            </div>
+            <h3>Stay Fit. Stay Healthy. Stay Happy.</h3>
+            <p>© 2025 Work-it-out Fittness & Wellness | All Rights Reserved
+Website by Odg Odoogwu Desmond</p>
+        </div>
+    </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+    </script>
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
