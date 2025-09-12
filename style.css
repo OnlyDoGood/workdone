@@ -1490,8 +1490,166 @@ flex-direction: column;
     .description p{
         font-size: 16px;
     }
+    footer{
+        height: auto;
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-content h3, .footer-content p{
+        font-size:30px;
+        width: 90%;
+        text-align: center;
+    }
 }
 
+@media (max-width:480px) {
+    body{
+        font-size:  14px;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        width: 175px;
+    }
+    .our-classes-text{
+        width: 100%;
+    }
+    .our-classes-text h2{
+        font-size: 25px;
+        width: 90%;
+    }
+   .our-classes-two .our-classes-text{
+        width: 100%;
+    }
+    .our-classes-two img{
+        width: 250px;
+        height: auto;
+    }
+    .our-classes-two .our-classes-text h2{
+        font-size: 25px;
+        width: 90%;
+    }
+    img{
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+    .hero{
+    height: 70vh;
+    width: 100%;
+    }
+    
+    .our-classes-three img{
+        width: 150px;
+    }
+    .our-classes-three{
+        background-color: #033026;
+        height: auto;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .hero h2{
+        font-size:22px;
+        width: 90%;
+    }
+    .hideOnMobile{
+      display: none;
+    }
+    #menuIcon{
+        display: block;
+    }
+    img{
+        width: 250px;
+        
+    }
+    header{
+        width:90%;
+        margin: auto;
+    }
+    header #menuIcon.close-outline{
+        color: var(--bg-color);
+    }
+    
+   nav li:first-child{
+        margin-left: 10px;
+        font-size: 20px;
+    }
+   nav li:first-child ion-icon{
+        font-size: 40px;
+    }
+    .our-classes{
+    flex-direction: column;
+    height: auto;
+    padding: 40px 0;
+    text-align: center;
+    flex-wrap: wrap;
+
+    }
+    .our-classes-two{
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 40px 0;
+    text-align: center;
+    flex-wrap: wrap;
+
+    }
+    table {
+    width: 90%;
+    display: flex;
+    }
+    .fitness-heart{
+   animation: spin 8s ease-in-out infinite;
+    transition: all .8s;
+    
+    color: black;
+
+    }
+    .hero-schedule-schedule{
+     text-align: left; 
+     height: 60%;  
+    }
+    .classes-descriptions{
+        display:flex;
+        flex-direction: column;
+    }
+    .classes-plans{
+        margin-top: 400px;
+    }
+    .description .classes-description{
+        font-size: 20px;
+    }
+    .description p{
+        font-size: 16px;
+    }
+    #table th, #table td, #table tr{
+        font-size: 12px;
+        background-color: #fff;
+
+    }
+    footer{
+        height: auto;
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-content h3, .footer-content p{
+        font-size:24px;
+        width: 90%;
+        text-align: center;
+    }
+}
 
  @keyframes spin {
 
