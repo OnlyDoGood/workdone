@@ -877,7 +877,7 @@ li em{
     border-radius: 10px;
     box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
 }
-table{
+/* table{
     width: 100%;
     border-collapse: collapse;
     margin: auto;
@@ -912,7 +912,7 @@ tr{
     border-right: 2px solid green;
     border-left: 2px solid green;
     border-bottom: 2px solid green;
-}
+} */
 .img-wrapper{
     position: relative;
     min-height: 100vh;
@@ -1269,11 +1269,7 @@ tr{
 
     }
 
-    table {
-    width: 90%;
-
-    display: flex;
-    }
+    
     .fitness-heart{
    animation: spins 8s ease-in-out infinite;
     transition: all .8s;
@@ -1371,11 +1367,7 @@ flex-direction: column;
 
     }
 
-    table {
-    width: 90%;
-
-    display: flex;
-    }
+    
     .fitness-heart{
    animation: spins 8s ease-in-out infinite;
     transition: all .8s;
@@ -1462,10 +1454,7 @@ flex-direction: column;
     flex-wrap: wrap;
 
     }
-    table {
-    width: 90%;
-    display: flex;
-    }
+    
     .fitness-heart{
    animation: spins 8s ease-in-out infinite;
     transition: all .8s;
@@ -1602,10 +1591,7 @@ flex-direction: column;
     flex-wrap: wrap;
 
     }
-    table {
-    width: 90%;
-    display: flex;
-    }
+    
     .fitness-heart{
    animation: spin 8s ease-in-out infinite;
     transition: all .8s;
@@ -1614,8 +1600,9 @@ flex-direction: column;
 
     }
     .hero-schedule-schedule{
-     text-align: left; 
-     height: 60%;  
+        justify-content: center;
+        align-items: center;
+        height: 60%;  
     }
     .classes-descriptions{
         display:flex;
@@ -1630,11 +1617,13 @@ flex-direction: column;
     .description p{
         font-size: 16px;
     }
-    #table th, #table td, #table tr{
-        font-size: 12px;
-        background-color: #fff;
-
+    .hero-schedule-schedule h2{
+        font-size: 25px;
+        margin-top: 100px;
     }
+.classes-plans h2{
+    margin-top: 200px;
+}
     footer{
         height: auto;
         width: 100%;

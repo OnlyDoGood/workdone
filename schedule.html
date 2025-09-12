@@ -6,7 +6,74 @@
     <link rel="shortcut icon" href="assets/logo-transparent-png.png" type="image/x-icon">    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+<style>
+    table {
+        width: 90%;
+        border-collapse: collapse;
+        margin: 20px auto;
+        font-family: 'Poppins', sans-serif;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
 
+    th, td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #ff3300;
+        font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+   .table-header {
+        background-color: red;
+    }
+
+    tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    @media (max-width: 768px) {
+        table, thead, tbody, th, td, tr {
+            display: block;
+            width: 100%;
+        }
+
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        tr {
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        td {
+            border: none;
+            position: relative;
+            padding-left: 50%;
+            text-align: right;
+        }
+        
+
+        td::before {
+            content: attr(data-label);
+            position: absolute;
+            left: 15px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+            text-align: left;
+            font-weight: bold;
+        }
+    }
+</style>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rock+Salt&display=swap" rel="stylesheet">
 </head>
@@ -71,7 +138,7 @@
     <div class="classes-plans"  data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
                         <h2 class="class"  data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200"> weekly schedule & trainer</h2>
 
-<table id="table"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+<!-- <table id="table"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
     <tr>
         <th>Time</th>
         <th>Monday</th>
@@ -145,6 +212,77 @@
         <td>Zumba with Lisa</td>
     </tr>
 
+</table> -->
+
+<table class="table">
+    <thead>
+        <tr class="table-header">
+            <th>Day</th>
+            <th>6:00-7:00</th>
+            <th>7:30-8:30</th>
+            <th>9:00-10:00</th>
+            <th>10:30-11:30</th>
+            <th>12:00-1:30</th>
+            <th>5:00-7:30</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-label="Day">Mondays</td>
+            <td data-label="6:00-7:00">Sunrise Strength with Odogwu</td>
+            <td data-label="7:30-8:30">Bootcamp with Rachel</td>
+            <td data-label="9:00-10:00">Pilates Fusion with Micheal</td>
+            <td data-label="10:30-11:30">Bootcamp with Emilly</td>
+            <td data-label="12:00-1:30">Wide Ride with Sarah</td>
+            <td data-label="5:00-7:30">800 REPs with David</td>
+        </tr>
+        <tr>
+            <td data-label="Day">Tuesdays</td>
+            <td data-label="6:00-7:00">Power Flow with Anna</td>
+            <td data-label="7:30-8:30">Total Body Circuit with John</td>
+            <td data-label="9:00-10:00">Pilates with Emily</td>
+            <td data-label="10:30-11:30">Fit Kids with Lisa</td>
+            <td data-label="12:00-1:30">Wide Ride with Sarah</td>
+            <td data-label="5:00-7:30">Arms & Abs with Melissa</td>
+        </tr>
+        <tr>
+            <td data-label="Day">Wednesdays</td>
+            <td data-label="6:00-7:00">Sunrise Strength with Odogwu</td>
+            <td data-label="7:30-8:30">Bootcamp with Rachel</td>
+            <td data-label="9:00-10:00">Pilates Fusion with Micheal</td>
+            <td data-label="10:30-11:30">Bootcamp with Emilly</td>
+            <td data-label="12:00-1:30">Wide Ride with Sarah</td>
+            <td data-label="5:00-7:30">Barre with Sophie</td>
+        </tr>
+        <tr>
+            <td data-label="Day">Thursdays</td>
+            <td data-label="6:00-7:00">Power Flow with Anna</td>
+            <td data-label="7:30-8:30">Total Body Circuit with John</td>
+            <td data-label="9:00-10:00">Pilates with Emily</td>
+            <td data-label="10:30-11:30">Fit Kids with Lisa</td>
+            <td data-label="12:00-1:30">Wide Ride with Sarah</td>
+            <td data-label="5:00-7:30">Pound with David</td>
+        </tr>
+        <tr>
+            <td data-label="Day">Fridays</td>
+            <td data-label="6:00-7:00">Sunrise Strength with Odogwu</td>
+            <td data-label="7:30-8:30">Bootcamp with Rachel</td>
+            <td data-label="9:00-10:00">Pilates Fusion with Micheal</td>
+            <td data-label="10:30-11:30">Bootcamp with Emilly</td>
+            <td data-label="12:00-1:30">Wide Ride with Sarah</td>
+            <td data-label="5:00-7:30">The Grit Room Open Gym</td>
+        </tr>
+        <tr>
+            <td data-label="Day">Saturdays</td>
+            <td data-label="6:00-7:00">--</td>
+            <td data-label="7:30-8:30">--</td>
+            <td data-label="9:00-10:00">Fit Kids with Lisa</td>
+            <td data-label="10:30-11:30">Total Body Circuit with John</td>
+            <td data-label="12:00-1:30">Wide Ride with Sarah</td>
+            <td data-label="5:00-7:30">The Grit Room Open Gym</td>
+        </tr>
+       
+    </tbody>
 </table>
 
     </div>
