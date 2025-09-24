@@ -877,42 +877,6 @@ li em{
     border-radius: 10px;
     box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
 }
-/* table{
-    width: 100%;
-    border-collapse: collapse;
-    margin: auto;
-    box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
-    border-radius: 10px;    
-}
-th, td{
-    padding: 10px;
-    text-align: left;
-    border-bottom: 0px solid red;
-    font-size: 12px;
-    font-weight: 400;
-    color: black;
-}
-th{
-    background: #f0f0f0;
-    font-weight: 900;
-}
-td{
-    background: gold;
-    border-right: 2px solid green;
-}
-td:first-child{
-    background: #f5f5f5;
-    
-}
-tr:hover{
-    background: #f5f5f5;
-}
-tr{
-    transition: all .6s;
-    border-right: 2px solid green;
-    border-left: 2px solid green;
-    border-bottom: 2px solid green;
-} */
 .img-wrapper{
     position: relative;
     min-height: 100vh;
@@ -1624,6 +1588,59 @@ flex-direction: column;
 .classes-plans h2{
     margin-top: 200px;
 }
+.contact-form{
+    width: 100%;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.member-info{
+ width: 300px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.team-member{
+   max-width: 300px;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+}
+.team-member img{
+    max-width: 250px;
+    margin: auto;
+}
+.team-member h3{
+    font-size: 24px;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        flex-wrap: wrap;
+        max-width: 220px;
+}
+.team-member p{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        max-width: 250px;
+
+}
+.team-member span{
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        max-width: 250px;
+
+}
+
     footer{
         height: auto;
         width: 100%;
@@ -1655,7 +1672,89 @@ flex-direction: column;
         
     }
     
-} 
+} .vip-packages-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between cards */
+    flex-wrap: wrap; /* Wrap cards to the next line if needed */
+    margin: 50px auto;
+    max-width: 1200px; /* Adjust as needed */
+    padding: 20px;
+}
+.vip-card {
+  width: 220px; /* Adjust as needed */
+  height: 300px; /* Adjust as needed */
+  border-radius: 15px; /* Rounded corners for the card */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  font-family: Arial, sans-serif; /* Example font */
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+.vip-card.platinum {
+  background: linear-gradient(to bottom, #8a8a8a, #333333); /* Example: Dark silver/grey gradient */
+}
+
+.vip-card.gold {
+  background: linear-gradient(to bottom, #ffdb58, #b8860b); /* Example: Gold gradient */
+}
+
+.vip-card.silver {
+  background: linear-gradient(to bottom, #cccccc, #777777); /* Example: Silver gradient */
+}
+
+.vip-card.bronze {
+  background: linear-gradient(to bottom, #cd7f32, #8b4513); /* Example: Bronze gradient */
+}
+.vip-level {
+  font-size: 3em; /* Adjust size */
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.premium-text {
+  font-size: 1.2em;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.tier-name {
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.package-text {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.limited-edition {
+  font-size: 0.9em;
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.limited-edition:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: all .6s;
+}
+
+.stars {
+  font-size: 1.5em; /* Adjust size of stars */
+  color: gold; /* Color for the stars */
+  margin-top: 10px;
+}
+
 
 
 
